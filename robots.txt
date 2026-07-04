@@ -1,0 +1,10 @@
+# Robots.txt - Icon Design Imprenta & Publicidad
+# https://www.icondesignloja.com
+
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+
+# Sitemap
+Sitemap: https://www.icondesignloja.com/sitemap.xml
