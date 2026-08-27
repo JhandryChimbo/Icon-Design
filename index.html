@@ -38,8 +38,12 @@
     <meta name="twitter:image" content="https://www.icondesignloja.com/assets/hero.jpg">
     <meta name="twitter:image:alt" content="Icon Design - Estudio de impresión publicitaria en Loja">
     
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon – multi-format for all browsers -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="any">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta name="msapplication-TileColor" content="#e31c25">
+    <link rel="manifest" href="site.webmanifest">
     
     <!-- Preconnect para recursos externos -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -889,7 +893,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 Icon Design. Todos los derechos reservados. Diseñado en Loja, Ecuador.</p>
+                <p>&copy; <span id="footerYear">2026</span> Icon Design. Todos los derechos reservados. Diseñado en Loja, Ecuador.</p>
                 <div class="footer-bottom-links">
                     <a href="#">Política de Privacidad</a>
                     <a href="#">Términos de Servicio</a>
@@ -899,11 +903,13 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/593986204544?text=Hola%20Icon%20Design,%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Escríbenos por WhatsApp" id="floatingWhatsappIcon">
+    <a href="https://wa.me/593986204544?text=Hola%20Icon%20Design,%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Escríbenos por WhatsApp" id="floatingWhatsappIcon" style="position:fixed;">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Dynamic footer year -->
+    <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
     <!-- Custom JS -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+{
+  "name": "Icon Design - Imprenta & Publicidad Loja",
+  "short_name": "Icon Design",
+  "description": "Imprenta y publicidad de alta calidad en Loja, Ecuador",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f11",
+  "theme_color": "#e31c25",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
